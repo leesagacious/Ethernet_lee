@@ -10,5 +10,6 @@ struct gener_queue {
 struct gener_eth {
   unsigned int mask;
   unsigned int num_queues;
+  struct net_device *ndev;
   struct gener_queue  queues[MAX_GENER_QUEUES];
 };
